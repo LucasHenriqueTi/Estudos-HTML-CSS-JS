@@ -1,0 +1,30 @@
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(116, 56, 56);
+    color: rgb(255, 212, 212);
+    padding: 0%;
+    margin: 0%;
+}
+
+body h1 {
+    font-style: oblique;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+body h2 {
+    font-style: oblique;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+ul a {
+    color: rgb(0, 136, 255);
+    display: flex;
+    
+}
+nav ul li {
+    list-style: none;
+    display: flex;
+}
+
