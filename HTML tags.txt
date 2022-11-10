@@ -1,0 +1,152 @@
+<article> = Inclui um bloco de conteúdo que deve ser usado quando se deseja inserir um artigo, 
+	    como um post de um blog, por exemplo.
+
+<section> = Define uma seção no documento. É normalmente utilizado para agrupar seções. 
+	    Por exemplo: uma <section> poderia conter vários <article>.
+
+<h1> = Usada para inserir títulos ao longo da página. É uma boa prática que cada seção ou cada bloco de texto seja precedido por um título. 
+	Trata-se de uma tag hierárquica, logo, no título mais importante deve ser usada a tag <h1>, 
+	no subtítulo seguinte, <h2>, e assim por diante. Além disso, uma página poderá conter várias <h1>, <h2>... <h6>. 
+	A exceção aqui fica por conta da tag <h1>, uma vez que é recomendado utilizar apenas uma numa mesma página.
+
+<p> = Usada para inserir parágrafos de texto.
+
+<pre> = Usada para inserir um texto pré-formatado.
+
+<div> = Embora não seja considerada semântica, essa tag poderá ser usada para agrupar algum tipo de 
+	conteúdo que não tenha nenhuma semântica específica ou que não se encaixe bem dentro de uma tag semântica.
+
+<span> = É semelhante à <div>. Entretanto, enquanto a <div> é um elemento não semântico no bloco 
+	 (quando usada, quebra o conteúdo em uma seção), a <span> é embutida (não quebra o conteúdo, apenas o agrupa).
+
+<a> = Usada para inserir Links.
+
+<br/> = Usada para inserir uma qubra de linha
+
+<b> = aplica o efeito de negrito em um texto
+
+<strong> = aplica o efeito de negrito em um texto e o marca como importante
+
+<i> = aplica o efeito de itálico em um texto
+
+<em> = aplica o efeito de itálico e dá ênfase a um texto
+
+____________________________________________________________________
+**LISTAS**
+
+Ordenadas 
+tag conteiner <ol> 
+tag listagem de item <li> 
+
+Não Ordenadas
+tag conteiner <ul>
+tag listagem de item <il>
+
+Definição
+tag conteiner <dl>
+tag listagem de item <dt>
+tag Descrição <dd>
+_______________________________________________________________
+** TABELAS **
+
+<table> = Container principal da tabela
+
+<tr> = (criar linha horizontal) Representa as linhas, sendo composta pelas tags relacionadas às colunas.
+
+<td> (adicionar dados a uma linha) Representa as colunas e precisa ser inserida dentro da tag de linha.
+
+<th> = Também representa colunas e é usada para exibir o título de uma coluna, possuindo, neste sentido, função semântica. Assim como a tag <td>, 
+	deve estar contida em uma tag de linha. 
+	Este elemento apresenta estilos próprios, sendo renderizado de forma diferente das colunas comuns.
+
+<thead> = Armazena o cabeçalho da tabela, sendo composto por linhas e colunas. Este elemento, a exemplo do que vimos anteriormente, 
+	  tem função semântica em termos de estruturação de conteúdo.
+
+<tfoot> = Armazena o rodapé da tabela, tendo também função semântica em termos de estruturação.
+
+(dentro da tag) rowspan="" = alinhar verticalmente com os dados
+(dentro da tag) colspan="" = alinhar horizontalmente com os dados
+
+<capition> = para dar um titulo a sua tabela
+_______________________________________________________________________
+** FORMULARIOS **
+
+<form> = Container principal do formulário
+
+<input> = Campo do formulário. Como há diversos tipos de campos, fazemos uso do atributo “type” para informar o tipo a ser utilizado – 
+	  conforme veremos mais adiante.
+
+<textarea> = Campo de texto de Múltiplas linhas
+
+<select> e <option> = Campos de seleção, onde o container é definido pela tag <select> e os itens pela tag <option>
+
+<button> = Campo de botão. Permite que uma ação seja executada no formulário - enviar o formulário, limpar os dados etc.
+
+<label> = Usado para definir um titulo, uma legenda, que descreva para que serve caada campo do formulário
+
+<fieldset> = para criar sessões dentro do formulário, para uma melhor organização
+
+** ATRIBUTOS **
+
+<form action=""> = Define a URL (endereço) para a qual os dados do formulário serão enviados.
+
+<form method=""> = Define o método HTTP (POST ou GET) para envio dos dados.
+
+<label for=""> = Vincula a tag <label> ao campo ao qual ela se refere. Este vínculo faz com que seja possível clicar na label para ativar o campo relacionado.
+
+<input minlength/maxlength=""> = Definem a quantidade de caracteres mínima e máxima, respectivamente, permitida em um campo.
+
+<input type="">/<button type=""> = Define o tipo do campo e, sobretudo, como ele se comporta.
+
+<option value=""> = Este atributo também pode ser utilizado na tag <input>. Ele define o valor do campo. No caso da <option>, 
+		    os seus valores possíveis são previamente definidos quando a página é codificada. Já na <input>, 
+		    embora também possa ser previamente definido, normalmente é o usuário quem define o seu valor.
+
+<input placeholder> = Exibir um texto no campo de input.
+		      Utilizado para dar uma dica ao usuário sobre o dado a ser inserido.
+
+<input required> = Determinar se um campo é obrigatório.
+		  Utilizado na validação dos dados de um formulário.
+
+<input autofocus> = Fixar o foco no campo.
+		    Utilizado quando desejamos que, ao carregar o formulário, um determinado campo seja focado.
+
+<input pattern> = Validar o valor de um campo com base em uma expressão regular.
+		  (As RegEX – expressões regulares – podem ser consideradas um recurso de linguagem de programação para a análise e manipulação de texto.)
+		  O campo de tel. é um bom exemplo de utilização desse atributo. Com ele podemos, por exemplo, determinar a quantidade de caracteres e o formato esperado para um campo. 
+
+** ATRIBUTOS PARA type="" **
+
+password = mascara o texto com asteristicos
+
+hiden = esconde o campo para não ser exibido no navegador
+
+checkbox =  usado para seleção de valor atrasvés de click/check
+
+radio = Usado para seleção exclusiva de valor - quando é apresentada mais de uma opção, apenas uma poderá ser selecionada, ao contrário do tipo "checkbox"
+	para isso todos os names="" das opções devem ser iguais
+
+submit = associada á tag <button>, dispara o evento que envia/submete o formulário
+
+reset = associada à tag <button>, dispara o evento que limpa os valores do formulário
+
+button = uma tag <input> pode ser do tipo "button" - exercendo assim, a mesma função da tag <button>
+
+tel = Inserir números de telefone.
+      Para uma melhor usabilidade, deve ser usado em conjunto com o atributo pattern.
+      pattern=""
+
+datetime = Inserir datas com o fuso horário em UTC a partir de um calendário.
+
+date = Inserir datas sem fuso horário a partir de um calendário.
+
+number = Inserir números.
+	 Cria um componente diferente do imput normal, em que, por meio de setas, os números podem ser incrementados ou decrementados.
+	 no number conseguimos usar os complementos min="" max="" step="1"(de quantos em quantos contar) value=""(valor inicial)
+
+
+
+
+ 
+
+

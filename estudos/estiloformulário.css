@@ -1,0 +1,25 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+fieldset {
+    padding: 8px;
+    width:max-content;
+    
+}
+
+fieldset label.idade {
+    padding: 2px;
+    
+    
+}
+
+fieldset label.cpf {
+    padding: 7px;
+    
+}
+
+fieldset label.email {
+    padding: 2px;
+}

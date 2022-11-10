@@ -1,0 +1,19 @@
+padding: = o espaço q um elemento oculpa 
+
+font-family: = para mudar a fonte da lentra
+
+font-size: = tamanho da fonte 
+
+border: 0px; solid = para por uma borda e cor na palavra 
+
+width: 0px; = largura da  
+
+border-collapse: collapse; = unir uma borda a outra
+
+text-align: = alinhamento do texto
+
+display: para organizar os elementos
+
+justify-content: = espaçamento entre os elementos
+
+align-items: alinhas os itens de um conteiner
