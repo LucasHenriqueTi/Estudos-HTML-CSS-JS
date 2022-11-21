@@ -4,16 +4,76 @@ font-family: = para mudar a fonte da lentra
 
 font-size: = tamanho da fonte 
 
-border: 0px; solid = para por uma borda e cor na palavra 
+font-style = para por italic na fonte
 
-width: 0px; = largura da  
+font-wight = para por negrito na fonte
+
+border: 0px; solid = Controla as bordas de um elemento, 
+	sendo possível definir suas cores, espessuras, entre outras propriedades e cor na palavra 
+
+width: 0px; = largura do elemento  
 
 border-collapse: collapse; = unir uma borda a outra
 
-text-align: = alinhamento do texto
+text-align: = alinhamento do texto Horizontalmente (left,center,right)
+
+vertical-align = alinhamento do texto Verticalmente (top,middle,bottom)
 
 display: para organizar os elementos
 
 justify-content: = espaçamento entre os elementos
 
 align-items: alinhas os itens de um conteiner
+
+tag:hover = acontecer quando o mouse estiver em cima
+
+background =  Estabiliza o fundo de elementos. Para tal há uma série de propriedades, 
+	      além do atalho “Background”, como “background-color”, “background-image” etc.
+
+Top, Bottom, 
+Righ e Left = Controlam o posicionamento, relativo ou absoluto, 
+	      dos elementos em relação a outros elementos.
+
+Height = Define a altura de um elemento.
+
+Position = Define como um elemento deve ser posicionado na página
+
+Text-= Muitas propriedades controlam o comportamento do conteúdo textual de um elemento, 
+       como alinhamento (justificado, centralizado etc.), aparência (sublinhado etc.) etc.
+
+Z-index = Define a profundidade de um elemento – usado, por exemplo, para sobreposição de elementos.
+
+Font-family, Font-size, Font-weight etc = Série de propriedades usada para estilizar o conteúdo textual de um elemento no que diz respeito à fonte, 
+					  como a família de fontes, seu tamanho, peso (mais clara ou mais escura - negrito) etc.
+
+word-spacing = Espaçamento entre palavras
+
+**Pseudoclasses**
+
+:active = Seleciona todos os links ativos.
+
+:checked = Seleciona todos os campos input checados.
+
+:first-child = Seleciona todo primeiro item de lista.
+
+:last-child = Seleciona todo último item de lista.
+
+:hover = Seleciona todas as divs no evento mouseover.
+
+**Pseudoelementos**
+
+::after = Inserir conteúdo após o elemento indicado.
+
+::before = Inserir conteúdo antes do elemento indicado.
+
+::first::letter = Selecionar a primeira letra do elemento indicado.
+
+::first-line = Selecionar a primeira linha do elemento indicado
+
+::selection = Seleciona a porção de um elemento que é selecionado pelo usuário.
+
+
+
+
+
+
