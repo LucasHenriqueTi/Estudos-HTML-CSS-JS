@@ -1,0 +1,40 @@
+Ctrl + : = para comentar a parte selecionada no VC code
+
+// = para comentar 
+
+**console**
+console.erro('este é um erro!')
+console.warn('este é um aviso!')
+console.log('esta é uma menssagem!')
+
+**Variáveis**
+usadas para declarar variáveis
+var x = 10
+// maneiras mais modernas
+let x = 10
+const x = 10 (obs: não pode ser atribuido um novo valor)
+
+**tipos de dados**
+
+console.log(typeof) = usado para saber o tipo do dado inserido 
+
+null = usado para declarar um espaço vazio onde será preenchido ao longo do codigo
+ex..
+let name = null
+
+[] = listas/
+
+{} = dicionario/ declarar valores a objetos
+
+ex..
+
+const cadastro = {nome: 'lucas', idade: '24', sexo: 'masculino' }
+
+**métodos de string**
+
+.tolowercase() = para formatar tudo em minusculo
+
+.touppercase() = para formatar tudo em maiusculo
+
+.indexof() = para localizar uma letra/frase
+
