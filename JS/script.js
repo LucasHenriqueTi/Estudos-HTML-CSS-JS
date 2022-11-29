@@ -1,6 +1,5 @@
-console.log("olá mundo js!")
+//let num1 = prompt('insira um numero'), num2 = prompt('insira outro numero')
 
-let = 10
-console.log(let)
-const cadastro = {nome: 'lucas', idade: '24', sexo: 'masculino' }
-console.log(cadastro)
+//let resultado = alert(num1 / num2)
+
+document.getElementById(n1)
