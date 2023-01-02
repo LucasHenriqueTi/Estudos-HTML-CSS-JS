@@ -2,6 +2,20 @@ Ctrl + : = para comentar a parte selecionada no VC code
 
 // = para comentar 
 
+document.getElementById(" ") = para puxar um objeto pelo seu ID
+
+innerHTML = propriedade DOM relativa ao conteúdo de um elemento.
+	    permite tanto a inclusão quanto a exclusão e a modificação do conteúdo do elemento.
+
+function = palavra reservada, utilizada para indicar que será declarada uma função.
+	   é procedida pelo nome da função e por parênteses. caso receba parâmetros 
+	   eles devem ser declarados dentro dos parênteses 
+
+return = palavra reservada, utilizada para indicar o contúdo a ser retornado pela função
+	 nem todas as funções retornam valores. logo, essa instrução só deve ser utilizada
+	 por funções que retornem algum resultado. 
+
+
 **console**
 console.erro('este é um erro!')
 console.warn('este é um aviso!')
