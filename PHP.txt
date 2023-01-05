@@ -17,6 +17,35 @@ FOREACH() = repita para cada elemento da lista/arrey/vetores (tudo a mesma coisa
 
 
 
+** Operadores de comparação **
+
+$var1 == $var2  /  Verifica se $var1 é igual a $var2
+
+$var1 === $var2 /  Verifica se $var1 é idêntica a $var2. Nesse caso, além do valor, verifica se ambas são do mesmo tipo
+
+$var1 != $var2  /  Verifica se $var1 é diferente de $var2
+
+$var1 < $var2	/  Verifica se $var1 é menor que $var2
+
+$var1 > $var2	/  Verifica se $var1 é maior que $var2
+
+$var1 <= $var2  /  Verifica se $var1 é menor ou igual a $var2
+
+$var1 >= $var2  /  Verifica se $var1 é maior ou igual a $var2
+
+** Operadores lógicos **
+
+$var1 and $var2  /  Retorna true se $var1 E $var2 forem verdadeiras
+
+$var1 or $var2  /  Retorna true se $var1 OU $var2 forem verdadeiras
+
+$var1 xor $var2 /  Retorna true se $var1 OU $var2 forem verdadeiras, mas não ambas
+
+!$var1          /  Retorna true se $var1 não for verdadeira
+
+$var1 && $var2  /  Retorna true se $var1 E $var2 forem verdadeiras
+
+$var1 || $var2  /  Retorna true se $var1 OU $var2 forem verdadeiras
 
 
 
