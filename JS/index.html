@@ -1,24 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundamentos JS</title>
-    <script src="script.js" defer></script>
+	<meta charset="utf-8">
+	<title>Requisição XMLHttpRequest</title>
 </head>
 <body>
-    <h1>fundamentos js</h1>
-    <form action="script.js" method="get">
-        <fieldset>
-            <label for="">1º Número </label>
-            <input type="number" name="number1" id="n1"> 
-            <br>
-            <label for="">2º Número</label>
-            <input type="number" name="number2" id="n2">
-            <br>
-            <button type="submit">Calcular</button>
-        </fieldset>
-    </form>
+	<h1>Imagens Aleatórios de Cachorros</h1>
+	<p> A partir do click no botão abaixo uma nova imagem aleatória de cachorros será carregada utilizando requisições assíncronas com XMLHttpRequest</p>
+    
+	<img id="img_dog" src="" alt="Aguardando a imagem ser carregada" />
+	<br/>
+	<button onclick="carregarImagens()">Carregar Imagens</button>
 </body>
+	<script type="text/javascript">
+    
+		function carregarImagens(){
+      
+			var xmlHttpRequest = new XMLHttpRequest();
+			var url = "https://dog.ceo/api/breeds/image/random"
+
+			xmlHttpRequest.open("GET", url, true);
+
+			xmlHttpRequest.onreadystatechange = function() {
+				if (xmlHttpRequest.readyState == 3) {
+					console.log('Carregando o conteúdo');
+				}
+				if (xmlHttpRequest.readyState == 4) {
+                     
+					var jsonResponse = JSON.parse(xmlHttpRequest.responseText);
+       
+					console.log('Requisição Finalizada');
+					console.log('Resultado da Requisição: ' + jsonResponse);
+					console.log('Resultado da Requisição: ' + jsonResponse.message);
+        
+					var imgDog = document.getElementById("img_dog");
+					imgDog.src = jsonResponse.message;
+				}
+			};
+                 
+			xmlHttpRequest.send(null);
+    
+		}
+	</script>
 </html>
