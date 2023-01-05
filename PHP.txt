@@ -1,0 +1,23 @@
+** BASE PHP **
+
+<?php 
+?>
+
+** METODOS **
+
+$_POST = para pegar parametros enviado via POST
+
+$_GET = para pegar parametros via GET
+
+$_SESSION = para a gerencia de sessões do lado client durante a sessão do usuario. por exemplo, durante o longuin do cliente
+
+** CONTROLE DE FLUXO **
+
+FOREACH() = repita para cada elemento da lista/arrey/vetores (tudo a mesma coisa)
+
+
+
+
+
+
+

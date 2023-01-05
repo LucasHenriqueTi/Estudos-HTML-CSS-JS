@@ -36,7 +36,32 @@ null = usado para declarar um espaço vazio onde será preenchido ao longo do co
 ex..
 let name = null
 
-[] = listas/
+** ARREY **
+[] = arrey
+
+.shift = para remover o primeiro elemento de um arrey
+
+.unshift = para adicionar um novo elemento na primeira posição do arrey
+
+.push = para adicionar um novo na ultima posição do arrey elemento ao arrey
+
+.splice = usado para adicionar/substituir/excluir um elemento do arrey
+EX..
+var alunos = ['Alex', 'Anna', 'João'];
+alunos.splice(3,0,'Helena');
+console.log(alunos); //imprimirá 'Alex', 'Anna', 'João', 'Helena'
+
+.concat() = para juntar dois arrey's
+ex..
+const a = [12,15,24]
+const b = [55,23,18]
+let c = a.concat(b)
+c = [12,15,24,55,23,18]
+
+.sort = ordenar os elementos de um arrey
+
+.reverse = para inverder a ordem dos elementos de um arrey
+
 
 {} = dicionario/ declarar valores a objetos
 
@@ -51,4 +76,24 @@ const cadastro = {nome: 'lucas', idade: '24', sexo: 'masculino' }
 .touppercase() = para formatar tudo em maiusculo
 
 .indexof() = para localizar uma letra/frase
+
+.length = para saber o numero de elementos de umn arrey
+
+**Estrutura de repetição**
+
+for (contador = 0; contador < 10; contador ++)
+
+while (contador < 10){
+    console.log(contador);
+    contador ++;
+}
+
+do{
+    console.log(contador);
+    contador += 1;
+} while (contador < 10);
+
+
+
+
 
